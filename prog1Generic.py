@@ -10,8 +10,6 @@ dump - return into a file again"""
 from fileinput import filename
 from helper_prog1_generic import *
 
-
-
 def main():
      """a function that call all the functions due to the order"""
 filename = "prog1.json"
@@ -24,7 +22,7 @@ while user_selection != "x":
     if user_selection == "s" :search_a_contact(contacts)
     if user_selection == "d" :delete_a_contact(contacts)
     user_selection = menu()
-save()    
+save("prog1.json", contacts)    
 
 if __name__ == "__main__":
     main()
